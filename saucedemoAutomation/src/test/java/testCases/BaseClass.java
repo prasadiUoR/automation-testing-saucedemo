@@ -2,6 +2,8 @@ package testCases;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -9,16 +11,19 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import pageObjects.LoginPage;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
 public class BaseClass {
 
-    public WebDriver driver;
+    public static WebDriver driver;
 
     public Properties p;
 
@@ -58,5 +63,17 @@ public class BaseClass {
         loginPage.setUserName(p.getProperty("valid_userName"));
         loginPage.setPassword(p.getProperty("valid_password"));
         loginPage.clickLogin();
+    }
+
+    public String captureScreen(String tname)throws IOException {
+        String timeStamp=new SimpleDateFormat("yyyyMMddhhss").format(new Date());
+        TakesScreenshot takesScreenshot=(TakesScreenshot)driver;
+        File sourceFile=takesScreenshot.getScreenshotAs(OutputType.FILE);
+
+        String targetFilePath=System.getProperty("user.dir")+"\\screenshots\\"+tname+"_"+timeStamp+".png";
+        File targetFile=new File(targetFilePath);
+        sourceFile.renameTo(targetFile);
+
+        return targetFilePath;
     }
 }
