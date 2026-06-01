@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test  name="chrometest">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="testCases.TS001LoginTestCase">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="invalidLoginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="edgetest">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="testCases.TS001LoginTestCase">
+                <methods>
+                    <include name="loginTest"/>
+                    <include name="invalidLoginTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

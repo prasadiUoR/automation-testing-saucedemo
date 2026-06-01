@@ -44,7 +44,7 @@ public class TS001LoginTestCase extends BaseClass {
         try {
             LoginPage loginPage = new LoginPage(driver);
             loginPage.setUserName(p.getProperty("valid_userName"));
-             loginPage.setPassword("1234");
+            loginPage.setPassword("1234");
             loginPage.clickLogin();
 
             Assert.assertTrue(loginPage.checkErrorExists());
@@ -54,5 +54,31 @@ public class TS001LoginTestCase extends BaseClass {
             Assert.fail(e.getMessage());
         }
         logger.info("****Finished TC_LF_002 test case****");
+    }
+
+    /*
+    Test logging in with a valid username and invalid password.
+    This is a failure test case
+    */
+    @Test
+    public void loginTestFailure() {
+        logger.info("****Starting login test failure test case****");
+
+        try {
+            LoginPage loginPage = new LoginPage(driver);
+            loginPage.setUserName(p.getProperty("valid_userName"));
+            loginPage.setPassword("invalid_password");
+            loginPage.clickLogin();
+
+            ProductPage productPage = new ProductPage(driver);
+            boolean isTargetPageExists = productPage.isProductPageExists();
+
+            Assert.assertTrue(isTargetPageExists);
+        } catch (Exception e) {
+            logger.error("Test TC_LF_001 failed", e);
+            Assert.fail(e.getMessage());
+        }
+
+        logger.info("****Finished login test failure test case****");
     }
 }
