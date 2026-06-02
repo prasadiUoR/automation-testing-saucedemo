@@ -44,7 +44,7 @@ public class TS004CheckoutTestCase extends BaseClass{
                 checkoutPage.getPageTitle(),
                 "Checkout: Overview"
         );
-        logger.info("****Starting TC_CKF_001 test case****");
+        logger.info("****Finished TC_CKF_001 test case****");
     }
 
     /**
@@ -71,7 +71,7 @@ public class TS004CheckoutTestCase extends BaseClass{
                 checkoutFormPage.getErrorMessage(),
                 "Error: First Name is required"
         );
-        logger.info("****Starting TC_CKF_002 test case****");
+        logger.info("****Finished TC_CKF_002 test case****");
     }
 
     /**
@@ -98,7 +98,7 @@ public class TS004CheckoutTestCase extends BaseClass{
                 checkoutFormPage.getErrorMessage(),
                 "Error: Postal Code is required"
         );
-        logger.info("****Starting TC_CKF_003 test case****");
+        logger.info("****Finished TC_CKF_003 test case****");
     }
 
     /*
@@ -129,7 +129,7 @@ public class TS004CheckoutTestCase extends BaseClass{
 
         Assert.assertEquals(checkoutCompletePage.getPageTitle(),
                 "Checkout: Complete!");
-        logger.info("****Starting TC_CKF_004 test case****");
+        logger.info("****Finished TC_CKF_004 test case****");
 
     }
 }

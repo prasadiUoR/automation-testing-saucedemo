@@ -58,7 +58,7 @@ public class TS001LoginTestCase extends BaseClass {
 
     /*
     Test logging in with a valid username and invalid password.
-    This is a failure test case
+    This is set to failure intentionally. In order to generate failure in extent report
     */
     @Test
     public void loginTestFailure() {
