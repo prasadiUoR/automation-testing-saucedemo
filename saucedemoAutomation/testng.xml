@@ -4,45 +4,35 @@
     <listeners>
         <listener class-name="utilities.ExtentReportManager"/>
     </listeners>
-    <test verbose="2" preserve-order="true" name="D:/practise/QA/New folder/automation-testing-saucedemo/saucedemoAutomation/src/test/java/testCases">
+
+    <test verbose="2" preserve-order="true"
+          name="D:/practise/QA/New folder/automation-testing-saucedemo/saucedemoAutomation/src/test/java/testCases">
         <parameter name="os" value="Windows"/>
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="testCases.TS001LoginTestCase">
                 <methods>
-                    <include name="loginTest"/>
-                    <include name="invalidLoginTest"/>
-                    <include name="loginTestFailure"/>
+                    <exclude name="loginDDT"/>
                 </methods>
             </class>
             <class name="testCases.TS002ProductTestCase">
-                <methods>
-                    <include name="verifyProductList"/>
-                    <include name="isProductNamesVisible"/>
-                    <include name="verifyProductSortAz"/>
-                    <include name="verifyProductSortZa"/>
-                    <include name="verifyProductSortPriceLowHigh"/>
-                    <include name="verifyProductSortPriceHighLow"/>
-                    <include name="verifyAddProductToCart"/>
-                </methods>
             </class>
             <class name="testCases.TS003CartTestCase">
-                <methods>
-                    <include name="verifyMultipleProductsCanBeAdded"/>
-                    <include name="verifyRemoveProductFromCart"/>
-                    <include name="verifyCartDisplaysSelectedProducts"/>
-                    <include name="verifyRemoveProductFromCartPage"/>
-                </methods>
             </class>
             <class name="testCases.TS004CheckoutTestCase">
+            </class>
+        </classes>
+    </test>
+
+    <test name="edgetest">
+        <parameter name="os" value="Windows"/>
+        <parameter name="browser" value="edge"/>
+        <classes>
+            <class name="testCases.TS001LoginTestCase">
                 <methods>
-                    <include name="verifyCheckoutWithValidInfo"/>
-                    <include name="verifyCheckoutEmptyFirstName"/>
-                    <include name="verifyCheckoutEmptyPostalCode"/>
-                    <include name="verifySuccessfulOrderCompletion"/>
+                    <include name="loginDDT"/>
                 </methods>
             </class>
         </classes>
-
     </test>
 </suite>

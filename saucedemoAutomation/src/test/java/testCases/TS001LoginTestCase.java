@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import pageObjects.LoginPage;
 import pageObjects.ProductPage;
+import utilities.DataProviders;
 
 
 public class TS001LoginTestCase extends BaseClass {
@@ -80,5 +81,41 @@ public class TS001LoginTestCase extends BaseClass {
         }
 
         logger.info("****Finished login test failure test case****");
+    }
+
+    @Test(groups = {"DataDriven"}, dataProvider = "LoginData", dataProviderClass = DataProviders.class)
+    public void loginDDT(String userName, String password, String expectedResult){
+        logger.info("****Starting Data Driven login test ****");
+        try {
+            LoginPage loginPage = new LoginPage(driver);
+            loginPage.setUserName(userName);
+            loginPage.setPassword(password);
+            loginPage.clickLogin();
+
+            ProductPage productPage = new ProductPage(driver);
+            boolean isTargetPageExists = productPage.isProductPageExists();
+
+            if (expectedResult.equalsIgnoreCase("TRUE")) {
+                if (isTargetPageExists) {
+                    Assert.assertTrue(true);
+                } else {
+                    Assert.fail();
+                }
+            }
+
+            if (expectedResult.equalsIgnoreCase("FALSE")) {
+                if (!isTargetPageExists) {
+                    Assert.assertTrue(true);
+                } else {
+                    Assert.fail();
+                }
+            }
+
+        } catch (Exception e) {
+            logger.error("Test TC_LF_001 failed", e);
+            Assert.fail(e.getMessage());
+        }
+
+        logger.info("****Finished Data Driven login test****");
     }
 }
