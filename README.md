@@ -1,37 +1,34 @@
 # SauceDemo Automation Testing Project
 
-[![Java](https://img.shields.io/badge/Java-17-orange)](https://www.java.com)
-[![Selenium](https://img.shields.io/badge/Selenium-4.15.0-green)](https://selenium.dev)
-[![TestNG](https://img.shields.io/badge/TestNG-7.9.0-red)](https://testng.org)
-
 ## 📌 Project Overview
-The SauceDemo e-commerce web application is a popular demo e-commerce platform developed by saucelabs where users can browse and purchase various products. 
-This project aims to automate testing for saucedemo.com using Selenium WebDriver, Java, TestNG, and Maven. It covers functional test cases such as login, product selection, cart validation, and checkout flow. The project will include a range of features such as Data-Driven Tests, Cross-Browser Tests, Negative Tests, Logging Functionality and Report Generation using Extent Reports. 
+
+This project is an **end-to-end UI automation testing framework** for the SauceDemo e-commerce application:
+👉 https://www.saucedemo.com/
+
+It is built using **Selenium WebDriver** with **Java**, **TestNG**, and **Maven**, following the **Page Object Model (POM)** design pattern.
+
+The framework validates core user journeys such as login, product selection, cart operations, and checkout flow.
+
+The project will include a range of features such as Data-Driven Tests, Cross-Browser Tests, Negative Tests, Logging Functionality and Report Generation using Extent Reports. 
 
 ---
 
-## 🌐 Application Under Test
-https://www.saucedemo.com/
-
----
-
-## 🎯 Features
-The following features are included in the automation :
-
-- Cross-browser Testing
-- Page Object Models
-- HTML Reporting
-- Data logging
-- Data driven tests
-- Negative Testing
+## 🎯Key Features
+- [x]  Functional UI Test Automation 
+- [x]  Page Object Model (POM) Design Pattern
+- [x] Data-Driven Testing Support
+- [x] Cross-Browser Testing Capability
+- [x] Negative Test Scenarios
+- [x] Logging with Log4j
+- [x] HTML Reporting with Extent Reports
+- [x] Screenshot capture for failed tests
+- [x] Maven-based build system
 
 ## 🚀 Tech Stack
-
 - Java
 - Selenium WebDriver
 - TestNG
 - Maven
-- Page Object Model (POM)
 - Log4j
 - Extent Report
 - Git / GitHub
@@ -60,12 +57,36 @@ saucedemoAutomation/
 
 ## ⚙️ Getting Started
 
-Clone the project
+1.Clone the project
 ```
 git clone https://github.com/Prasadiuor/SaucedemoAutomation
 ```
-Go to the project directory
+2.Go to the project directory
 ```
 cd saucedemoAutomation
 ```
-Run ```run.bat``` file
+3.Install Dependencies
+```
+mvn clean install
+```
+4.Run tests
+```
+mvn test
+```
+5.Run TestNG suite
+```
+mvn test -DsuiteXmlFile=testng.xml
+```
+6.Run using batch file (Windows only)
+```
+Run run.bat file
+```
+## Project Results
+- Test Execution Screenshot
+- Extent Report Screenshot
+- Extent Report Screenshot - Failure Scenario
+## Future Enhancements
+- CI/CD integration (GitHub Actions / Jenkins)
+- Parallel execution support
+- Dockerized test execution
+- Allure reporting upgrade
