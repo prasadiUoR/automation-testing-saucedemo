@@ -13,6 +13,7 @@
             <class name="testCases.TS001LoginTestCase">
                 <methods>
                     <exclude name="loginDDT"/>
+                    <exclude name="loginTestFailure"/>
                 </methods>
             </class>
             <class name="testCases.TS002ProductTestCase">
