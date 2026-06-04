@@ -59,7 +59,7 @@ saucedemoAutomation/
 
 1.Clone the project
 ```
-git clone https://github.com/Prasadiuor/SaucedemoAutomation
+git clone https://github.com/prasadiUoR/automation-testing-saucedemo
 ```
 2.Go to the project directory
 ```
