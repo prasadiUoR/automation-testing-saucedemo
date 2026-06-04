@@ -82,7 +82,7 @@ mvn test -DsuiteXmlFile=testng.xml
 Run run.bat file
 ```
 ## Project Results
-- Test Execution Screenshot
+- Test Execution Screenshot 
 - Extent Report Screenshot
 - Extent Report Screenshot - Failure Scenario
 ## Future Enhancements
