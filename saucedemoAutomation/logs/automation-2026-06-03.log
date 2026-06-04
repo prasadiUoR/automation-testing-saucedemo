@@ -1,0 +1,58 @@
+14:08:37.629 [main] INFO  testCases.BaseClass - ****Starting TC_CF_003 test case****
+14:08:38.946 [main] INFO  testCases.BaseClass - ****Finished TC_CF_003 test case****
+14:08:42.093 [main] INFO  testCases.BaseClass - ****Starting TC_CF_004 test case****
+14:08:52.958 [main] INFO  testCases.BaseClass - ****Finished TC_CF_004 test case****
+14:08:55.211 [main] INFO  testCases.BaseClass - ****Starting TC_CF_006 test case****
+14:09:05.954 [main] INFO  testCases.BaseClass - ****Finished TC_CF_006 test case****
+14:09:10.869 [main] INFO  testCases.BaseClass - ****Starting TC_CKF_002 test case****
+14:09:12.335 [main] INFO  testCases.BaseClass - ****Finished TC_CKF_002 test case****
+14:09:15.088 [main] INFO  testCases.BaseClass - ****Starting TC_CKF_003 test case****
+14:09:16.243 [main] INFO  testCases.BaseClass - ****Finished TC_CKF_003 test case****
+14:09:18.895 [main] INFO  testCases.BaseClass - ****Starting TC_CKF_001 test case****
+14:09:20.466 [main] INFO  testCases.BaseClass - ****Finished TC_CKF_001 test case****
+14:09:23.471 [main] INFO  testCases.BaseClass - ****Starting TC_CKF_004 test case****
+14:09:24.800 [main] INFO  testCases.BaseClass - ****Finished TC_CKF_004 test case****
+14:11:35.349 [main] INFO  testCases.BaseClass - ****Starting TC_LF_002 test case****
+14:11:36.002 [main] INFO  testCases.BaseClass - ****Finished TC_LF_002 test case****
+14:11:39.135 [main] INFO  testCases.BaseClass - ****Starting TC_LF_001 test case****
+14:11:39.774 [main] INFO  testCases.BaseClass - ****Finished TC_LF_001 test case****
+14:11:44.223 [main] INFO  testCases.BaseClass - ****Starting TC_PF_002 test case****
+14:11:44.893 [main] INFO  testCases.BaseClass - ****Finished TC_PF_002 test case****
+14:11:47.235 [main] INFO  testCases.BaseClass - ****Starting TC_CF_001 test case****
+14:11:47.812 [main] INFO  testCases.BaseClass - ****Finished TC_CF_001 test case****
+14:11:49.918 [main] INFO  testCases.BaseClass - ****Starting TC_PF_001 test case****
+14:11:50.455 [main] INFO  testCases.BaseClass - ****Finished TC_PF_001 test case****
+14:11:52.664 [main] INFO  testCases.BaseClass - ****Starting TC_PF_004 test case****
+14:11:53.568 [main] INFO  testCases.BaseClass - ****Finished TC_PF_004 test case****
+14:11:55.681 [main] INFO  testCases.BaseClass - ****Starting TC_PF_007 test case****
+14:11:56.422 [main] INFO  testCases.BaseClass - ****Finished TC_PF_007 test case****
+14:11:58.818 [main] INFO  testCases.BaseClass - ****Starting TC_PF_006 test case****
+14:11:59.642 [main] INFO  testCases.BaseClass - ****Finished TC_PF_006 test case****
+14:12:01.631 [main] INFO  testCases.BaseClass - ****Starting TC_PF_005 test case****
+14:12:02.470 [main] INFO  testCases.BaseClass - ****Finished TC_PF_005 test case****
+14:12:06.624 [main] INFO  testCases.BaseClass - ****Starting TC_CF_005 test case****
+14:12:07.381 [main] INFO  testCases.BaseClass - ****Finished TC_CF_005 test case****
+14:12:09.419 [main] INFO  testCases.BaseClass - ****Starting TC_CF_003 test case****
+14:12:10.332 [main] INFO  testCases.BaseClass - ****Finished TC_CF_003 test case****
+14:12:12.421 [main] INFO  testCases.BaseClass - ****Starting TC_CF_004 test case****
+14:12:23.166 [main] INFO  testCases.BaseClass - ****Finished TC_CF_004 test case****
+14:12:25.318 [main] INFO  testCases.BaseClass - ****Starting TC_CF_006 test case****
+14:12:36.179 [main] INFO  testCases.BaseClass - ****Finished TC_CF_006 test case****
+14:12:40.494 [main] INFO  testCases.BaseClass - ****Starting TC_CKF_002 test case****
+14:12:41.616 [main] INFO  testCases.BaseClass - ****Finished TC_CKF_002 test case****
+14:12:43.901 [main] INFO  testCases.BaseClass - ****Starting TC_CKF_003 test case****
+14:12:45.087 [main] INFO  testCases.BaseClass - ****Finished TC_CKF_003 test case****
+14:12:47.391 [main] INFO  testCases.BaseClass - ****Starting TC_CKF_001 test case****
+14:12:48.731 [main] INFO  testCases.BaseClass - ****Finished TC_CKF_001 test case****
+14:12:51.147 [main] INFO  testCases.BaseClass - ****Starting TC_CKF_004 test case****
+14:12:52.696 [main] INFO  testCases.BaseClass - ****Finished TC_CKF_004 test case****
+17:10:04.915 [main] INFO  testCases.BaseClass - ****Starting TC_LF_002 test case****
+17:10:05.503 [main] INFO  testCases.BaseClass - ****Finished TC_LF_002 test case****
+17:10:09.681 [main] INFO  testCases.BaseClass - ****Starting Data Driven login test ****
+17:10:10.187 [main] INFO  testCases.BaseClass - ****Finished Data Driven login test****
+17:10:12.391 [main] INFO  testCases.BaseClass - ****Starting Data Driven login test ****
+17:10:22.843 [main] INFO  testCases.BaseClass - ****Finished Data Driven login test****
+17:10:24.962 [main] INFO  testCases.BaseClass - ****Starting Data Driven login test ****
+17:10:25.412 [main] INFO  testCases.BaseClass - ****Finished Data Driven login test****
+17:10:27.650 [main] INFO  testCases.BaseClass - ****Starting Data Driven login test ****
+17:10:28.123 [main] INFO  testCases.BaseClass - ****Finished Data Driven login test****
