@@ -82,9 +82,18 @@ mvn test -DsuiteXmlFile=testng.xml
 Run run.bat file
 ```
 ## Project Results
-- Test Execution Screenshot 
+- Test Execution Screenshot
+  
+  ![Test Execution](saucedemoAutomation/screenshots/execution.png)
 - Extent Report Screenshot
+  
+  ![Test Execution](saucedemoAutomation/screenshots/extentReport1.png)
+  ![Test Execution](saucedemoAutomation/screenshots/extentReport2.png)
 - Extent Report Screenshot - Failure Scenario
+  
+  ![Test Execution](saucedemoAutomation/screenshots/extentReportFailure1.png)
+  ![Test Execution](saucedemoAutomation/screenshots/extentReportFailure2.png)
+  
 ## Future Enhancements
 - CI/CD integration (GitHub Actions / Jenkins)
 - Parallel execution support
