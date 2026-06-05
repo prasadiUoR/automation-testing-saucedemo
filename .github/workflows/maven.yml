@@ -28,6 +28,14 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn -f saucedemoAutomation/pom.xml clean test
+      run: mvn -f saucedemoAutomation/pom.xml clean test      
+    - name: Upload Extent Report
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: extent-report
+        path: saucedemoAutomation/reports/
+
+      
 
 
