@@ -54,6 +54,9 @@ public class BaseClass {
                 options.addArguments("--incognito");
                 options.addArguments("--disable-notifications");
                 options.addArguments("--disable-save-password-bubble");
+                options.addArguments("--headless=new");
+                options.addArguments("--no-sandbox");
+                options.addArguments("--disable-dev-shm-usage");
                 driver = new ChromeDriver(options);
                 break;
             case "edge":
