@@ -32,8 +32,8 @@ public class ExtentReportManager implements ITestListener {
         repName = "Test-Report-" + timeStamp + ".html";
 
         // Specify location for the report
-        sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
-
+//        sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
+        sparkReporter = new ExtentSparkReporter("reports/" + repName);
         // Set report configurations
         sparkReporter.config().setDocumentTitle("Saucedemo Automation Report");
         sparkReporter.config().setReportName("Saucedemo Functional Testing");
