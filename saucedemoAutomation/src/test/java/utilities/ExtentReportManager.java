@@ -82,7 +82,10 @@ public class ExtentReportManager implements ITestListener {
 
         // Capture screenshot if required and add to the report
         try {
-            String imgPath = new BaseClass().captureScreen(result.getName()); // Capture screenshot
+//            String imgPath = new BaseClass().captureScreen(result.getName()); // Capture screenshot
+            String imgPath = BaseClass.driver != null
+                    ? new BaseClass().captureScreen(result.getName())
+                    : null;
             test.addScreenCaptureFromPath(imgPath);
 
         } catch (IOException e) {
@@ -108,10 +111,5 @@ public class ExtentReportManager implements ITestListener {
         String pathOfExtentReport = System.getProperty("user.dir") + "\\reports\\" + repName;
         File extentReport = new File(pathOfExtentReport);
 
-        try {
-            Desktop.getDesktop().browse(extentReport.toURI());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 }

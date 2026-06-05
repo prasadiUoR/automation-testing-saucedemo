@@ -1,5 +1,6 @@
 package testCases;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
@@ -33,8 +34,8 @@ public class BaseClass {
 
     protected static final Logger logger = LogManager.getLogger(BaseClass.class);
 
-    @AfterClass
-    @BeforeMethod(groups = {"DataDriven"})
+
+    @BeforeMethod
     @Parameters({"os","browser"})
     public void setUp(String os, String br) throws IOException {
 
@@ -64,6 +65,9 @@ public class BaseClass {
 
                 edgeOptions.addArguments("--inprivate");
                 edgeOptions.addArguments("--disable-notifications");
+                edgeOptions.addArguments("--headless=new");
+                edgeOptions.addArguments("--disable-dev-shm-usage");
+                edgeOptions.addArguments("--no-sandbox");
                 driver = new EdgeDriver(edgeOptions);
                 break;
             default: System.out.println("Invalid browser name.."); return;
@@ -74,8 +78,8 @@ public class BaseClass {
         driver.manage().window().maximize();
     }
 
-    @AfterClass
-    @AfterMethod(groups = {"DataDriven"})
+
+    @AfterMethod
     void tearDown(){
         driver.quit();
     }
