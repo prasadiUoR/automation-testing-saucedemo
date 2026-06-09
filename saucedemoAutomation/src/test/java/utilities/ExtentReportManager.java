@@ -32,7 +32,6 @@ public class ExtentReportManager implements ITestListener {
         repName = "Test-Report-" + timeStamp + ".html";
 
         // Specify location for the report
-//        sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);
         sparkReporter = new ExtentSparkReporter("reports/" + repName);
         // Set report configurations
         sparkReporter.config().setDocumentTitle("Saucedemo Automation Report");
@@ -82,7 +81,6 @@ public class ExtentReportManager implements ITestListener {
 
         // Capture screenshot if required and add to the report
         try {
-//            String imgPath = new BaseClass().captureScreen(result.getName()); // Capture screenshot
             String imgPath = BaseClass.driver != null
                     ? new BaseClass().captureScreen(result.getName())
                     : null;
