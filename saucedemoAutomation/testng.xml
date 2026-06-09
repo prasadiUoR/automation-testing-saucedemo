@@ -31,7 +31,6 @@
         <classes>
             <class name="testCases.TS001LoginTestCase">
                 <methods>
-                    <include name="loginDDT"/>
                     <exclude name="loginTest"/>
                     <exclude name="invalidLoginTest"/>
                     <exclude name="loginTestFailure"/>
