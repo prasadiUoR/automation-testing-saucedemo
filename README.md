@@ -3,6 +3,7 @@
 ## 📌 Project Overview
 
 This project is an **end-to-end UI automation testing framework** for the SauceDemo e-commerce application:
+
 👉 https://www.saucedemo.com/
 
 It is built using **Selenium WebDriver** with **Java**, **TestNG**, and **Maven**, following the **Page Object Model (POM)** design pattern.
